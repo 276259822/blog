@@ -57,13 +57,8 @@ module.exports = {
             ['/javascript/algorithm/Cartesian-product', '笛卡尔积算法']
           ]
         }
-      ],
-      '/about/': [
-        ''
       ]
-    },
-    sidebarDepth: 2,
-    lastUpdated: 'Last Updated'
+    }
   },
   configureWebpack: {
     resolve: {
