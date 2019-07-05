@@ -13,7 +13,7 @@ module.exports = {
         items: [
           { text: 'vue', link: '/vue-family/vue/' },
           { text: 'vue-router', link: '/vue-family/vue-router/' },
-          { text: 'vuex', link: '/vuex/' }
+          { text: 'vuex', link: '/vue-family/vuex/' }
         ]
       },
       {
