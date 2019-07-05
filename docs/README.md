@@ -4,7 +4,7 @@ heroImage: /images/avatar.jpg
 heroText: East China 个人博客
 tagline: 一个菜鸟小前端
 actionText: GO
-actionLink: /vue-family/vue/
+actionLink: /guide/
 features:
 - title: 记录
   details: 记录一些日常遇到的问题。

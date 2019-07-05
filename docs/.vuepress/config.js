@@ -7,7 +7,7 @@ module.exports = {
   ],
   themeConfig: {
     nav: [
-      { text: '主页', link: '/' },
+      { text: '主页', link: '/guide/' },
       {
         text: 'vue全家桶',
         items: [
@@ -19,7 +19,8 @@ module.exports = {
       {
         text: 'JavaScript',
         items: [
-          { text: '算法', link: '/javascript/algorithm/' }
+          { text: '算法', link: '/javascript/algorithm/' },
+          { text: '函数', link: '/javascript/function/' }
         ]
       },
       { text: '关于', link: '/about/' },
@@ -32,9 +33,7 @@ module.exports = {
           path: '/vue-family/vue/',
           collapsable: false,
           sidebarDepth: 1,
-          children: [
-            '/vue-family/vue/'
-          ]
+          children: []
         },
         {
           title: 'vue-router',
@@ -42,9 +41,15 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 1,
           children: [
-            '/vue-family/vue-router/',
             ['/vue-family/vue-router/resetRouter', '重置路由']
           ]
+        },
+        {
+          title: 'vuex',
+          path: '/vue-family/vuex/',
+          collapsable: false,
+          sidebarDepth: 1,
+          children: []
         }
       ],
       '/javascript/': [
@@ -55,6 +60,17 @@ module.exports = {
           sidebarDepth: 1,
           children: [
             ['/javascript/algorithm/Cartesian-product', '笛卡尔积算法']
+          ]
+        },
+        {
+          title: '函数',
+          path: '/javascript/function/',
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [
+            ['/javascript/function/curry', '柯里化函数'],
+            ['/javascript/function/deepClone', '深拷贝'],
+            ['/javascript/function/new', 'new的实现原理']
           ]
         }
       ]

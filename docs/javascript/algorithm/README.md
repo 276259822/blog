@@ -1,1 +1,1 @@
-[笛卡尔积算法](./Cartesian-product)
+- [笛卡尔积算法](./Cartesian-product)
