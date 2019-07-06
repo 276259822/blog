@@ -1,3 +1,6 @@
+const path = require('path')
+const resolve = p => path.resolve(__dirname, './', p)
+
 module.exports = {
   title: 'East China 个人博客',
   description: '一个菜鸟小前端',
@@ -70,7 +73,8 @@ module.exports = {
           children: [
             ['/javascript/function/curry', '柯里化函数'],
             ['/javascript/function/deepClone', '深拷贝'],
-            ['/javascript/function/new', 'new的实现原理']
+            ['/javascript/function/new', 'new的实现原理'],
+            ['/javascript/function/prototype', '原型链继承']
           ]
         }
       ]
@@ -79,7 +83,7 @@ module.exports = {
   configureWebpack: {
     resolve: {
       alias: {
-        '@': 'assets'
+        '@': resolve('docs')
       }
     }
   }

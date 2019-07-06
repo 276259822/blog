@@ -7,7 +7,7 @@
 
 ```javascript
 const curry = (fn, ...args) => 
-  args.length < fun.length
+  args.length < fn.length
     ? (...arguments) => curry(fn, ...args, ...arguments)
     : fn(...args)
 ```
