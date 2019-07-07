@@ -23,7 +23,8 @@ module.exports = {
         text: 'JavaScript',
         items: [
           { text: '算法', link: '/javascript/algorithm/' },
-          { text: '函数', link: '/javascript/function/' }
+          { text: '函数', link: '/javascript/function/' },
+          { text: 'Git', link: '/javascript/git/' }
         ]
       },
       { text: '关于', link: '/about/' },
@@ -75,6 +76,15 @@ module.exports = {
             ['/javascript/function/deepClone', '深拷贝'],
             ['/javascript/function/new', 'new的实现原理'],
             ['/javascript/function/prototype', '原型链继承']
+          ]
+        },
+        {
+          title: 'Git',
+          path: '/javascript/git/',
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [
+            ['/javascript/git/SSH-keys', 'SSH keys']
           ]
         }
       ]
