@@ -21,12 +21,14 @@ module.exports = {
       },
       {
         text: 'JavaScript',
+        link: '/javascript/',
         items: [
           { text: '算法', link: '/javascript/algorithm/' },
           { text: '函数', link: '/javascript/function/' },
           { text: 'Git', link: '/javascript/git/' }
         ]
       },
+      { text: 'Golang', link: '/golang/' },
       { text: '关于', link: '/about/' },
       { text: 'Github', link: 'https://github.com/276259822/blog' }
     ],
