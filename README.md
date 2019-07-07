@@ -1,7 +1,7 @@
 ## 介绍
 记录总结个人日常工作遇到、学到的、用到的经验、知识、技巧。
 
-## 更新日志1
+## 更新日志
 
 - 2019年07月06日
   - [原型链继承](https://276259822.github.io/blog/javascript/function/prototype.html)
