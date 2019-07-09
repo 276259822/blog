@@ -1,5 +1,8 @@
 ### 更新日志
 
+- 2019年07月09日
+  - [防抖函数](../javascript/function/debounce)
+
 - 2019年07月07日
   - [Git配置SSH访问GitHub](../javascript/git/SSH-keys)
 
