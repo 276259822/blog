@@ -78,7 +78,8 @@ module.exports = {
             ['/javascript/function/deepClone', '深拷贝'],
             ['/javascript/function/new', 'new的实现原理'],
             ['/javascript/function/prototype', '原型链继承'],
-            ['/javascript/function/debounce', '防抖函数']
+            ['/javascript/function/debounce', '防抖函数'],
+            ['/javascript/function/throttle', '节流函数']
           ]
         },
         {
