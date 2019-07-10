@@ -101,3 +101,83 @@ console.log(instance2.colors) // ['pink', 'blue', 'green']
 1. 可以向超类传递参数
 2. 每个实例都有自己的属性
 3. 实现了函数复用
+
+#### 寄生组合式继承
+- 所谓寄生组合式继承，即通过借用构造函数来继承属性，通过原型链的混成形式来继承方法，基本思路：不必为了指定子类型的原型而调用超类型的构造函数，我们需要的仅是超类型原型的一个副本，本质上就是使用寄生式继承来继承超类型的原型，然后再将结果指定给子类型的原型。寄生组合式继承的基本模式如下所示
+
+```javascript
+function inherPrototype(subType, superType) {
+  let prototype = object(superType.prototype)
+  prototype.constructor = subType
+  subType.prototype = prototype
+}
+```
+1. 创建一个超类型原型的副本
+2. 为创建的副本添加```constructor```属性
+3. 将新创建的对象赋值给子类型的原型
+
+- 至此，我们就可以通过调用 inheritPrototype 来替换为子类型原型赋值的语句：
+
+```javascript
+function SuperType(name) {
+  this.name = name
+  this.colors = ['pink', 'blue', 'green']
+}
+function SuberType(name, age) {
+  SuperType.call(this, name)
+  this.age = age
+}
+inherPrototype(SuberType, SuperType)
+```
+
+> 优点
+
+只调用了一次超类构造函数，效率更高。避免在```SuberType.prototype```上面创建不必要的、多余的属性，与其同时，原型链还能保持不变。
+因此寄生组合继承是引用类型最理性的继承范式。
+
+#### ES6 Class extends
+- 核心： ES6继承的结果和寄生组合继承相似，本质上，ES6继承是一种语法糖。但是，寄生组合继承是先创建子类实例this对象，然后再对其增强；而ES6先将父类实例对象的属性和方法，加到this上面（所以必须先调用super方法），然后再用子类的构造函数修改this。
+
+```javascript
+class A {}
+
+class B extends A {
+  constructor() {
+    super()
+  }
+}
+```
+
+- ES6实现继承的具体原理
+
+```javascript
+class A {}
+
+class B {}
+
+Object.setPrototypeOf = function (obj, proto) {
+  obj.__proto__ = proto
+  return obj
+}
+
+// B的实例继承A的实例
+Object.setPrototypeOf(B.prototype, A.prototype)
+
+// B继承A的静态属性
+Object.setPrototypeOf(B, A)
+```
+
+- ES6继承与ES5继承的异同
+
+> 相同点
+
+本质上ES6继承是ES5继承的语法糖
+
+> 不同点
+
+  1. ES6继承中子类的构造函数的原型链指向父类的构造函数，ES5中使用的是构造函数复制，没有原型链指向。
+  2. ES6子类实例的构建，基于父类实例，ES5中不是。
+
+#### 原型关系绘制的思维导图
+
+![关系绘制的思维导图](/images/prototype.png)
