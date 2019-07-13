@@ -1,7 +1,7 @@
 ### 更新日志
 
 - 2019年07月10日
-  - [节流函数]('../javascript/function/throttle')
+  - [节流函数](../javascript/function/throttle)
 
 - 2019年07月09日
   - [防抖函数](../javascript/function/debounce)
