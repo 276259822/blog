@@ -90,6 +90,13 @@ module.exports = {
           children: [
             ['/javascript/git/SSH-keys', 'SSH keys']
           ]
+        },
+        {
+          title: '设计模式',
+          path: '/javascript/design-patterns/',
+          collapsable: false,
+          sidebarDepth: 1,
+          children: []
         }
       ]
     }

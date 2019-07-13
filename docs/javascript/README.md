@@ -2,3 +2,4 @@
    - [算法](../javascript/algorithm/)
    - [函数](../javascript/function/)
    - [Git](../javascript/git/)
+   - [设计模式](../javascript/design-patterns/)
