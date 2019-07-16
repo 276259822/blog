@@ -97,6 +97,15 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 1,
           children: []
+        },
+        {
+          title: 'webpack',
+          path: '/javascript/webpack/',
+          collapsable: false,
+          sidebarDepth: 1,
+          children: [
+            ['/javascript/webpack/require.context', 'require.context']
+          ]
         }
       ]
     }

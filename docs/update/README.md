@@ -1,5 +1,8 @@
 ### 更新日志
 
+- 2019年07月16日
+  - [require.context](../javascript/webpack/require.context)
+
 - 2019年07月10日
   - [节流函数](../javascript/function/throttle)
 
