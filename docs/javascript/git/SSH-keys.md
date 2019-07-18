@@ -51,3 +51,8 @@ ssh -T git@github.com
 ```
 ssh-add ~/.ssh/id_rsa
 ```
+
+> window系统报错处理
+
+执行```ssh-add ~/.ssh/id_rsa```如果提示：```Could not open a connection to your authentication agent.```，则需要先执行```ssh-agent bash```
+
