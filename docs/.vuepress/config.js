@@ -25,7 +25,8 @@ module.exports = {
         items: [
           { text: '算法', link: '/javascript/algorithm/' },
           { text: '函数', link: '/javascript/function/' },
-          { text: 'Git', link: '/javascript/git/' }
+          { text: 'Git', link: '/javascript/git/' },
+          { text: 'webpack', link: '/javascript/webpack/' }
         ]
       },
       { text: 'Golang', link: '/golang/' },
@@ -104,7 +105,8 @@ module.exports = {
           collapsable: false,
           sidebarDepth: 1,
           children: [
-            ['/javascript/webpack/require.context', 'require.context']
+            ['/javascript/webpack/require.context', 'require.context'],
+            ['/javascript/webpack/eslint', 'ESLint安装与配置']
           ]
         }
       ]
