@@ -3,6 +3,9 @@
 
 ## 更新日志
 
+- 2019年08月12日
+  - [vue图片懒加载指令](https://276259822.github.io/blog/vue-family/vue/imgLazyLoad.html)
+
 - 2019年07月23日
   - [ESLint安装与配置](https://276259822.github.io/blog/javascript/webpack/eslint.html)
 

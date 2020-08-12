@@ -40,7 +40,9 @@ module.exports = {
           path: '/vue-family/vue/',
           collapsable: false,
           sidebarDepth: 1,
-          children: []
+          children: [
+            ['/vue-family/vue/imgLazyLoad', '图片懒加载指令']
+          ]
         },
         {
           title: 'vue-router',

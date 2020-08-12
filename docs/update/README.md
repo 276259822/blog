@@ -1,5 +1,8 @@
 ### 更新日志
 
+- 2020年07月12日
+  - [vue图片懒加载指令](../vue-family/vue/imgLazyLoad)
+
 - 2019年07月23日
   - [ESLint安装与配置](../javascript/webpack/eslint)
 
