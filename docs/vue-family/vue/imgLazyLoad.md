@@ -2,6 +2,7 @@
 
 > IntersectionObserver 对象的observe() 方法向IntersectionObserver对象监听的目标集合添加一个元素。一个监听者有一组阈值和一个根， 但是可以监视多个目标元素，以查看这些目标元素可见区域的变化。[https://developer.mozilla.org/zh-CN/docs/Web/API/IntersectionObserver](https://developer.mozilla.org/zh-CN/docs/Web/API/IntersectionObserver)
 
+#### 开发指令
 ```javascript
 // 创建一个监听器
 let IO = new IntersectionObserver(entries => {
@@ -36,4 +37,30 @@ export default {
     IO.disconnect()
   }
 }
+```
+
+#### 注册指令
+```javascript
+import imgLazyLoad from './imgLazyLoad'
+
+export default {
+  install (Vue) {
+    Vue.directive(imgLazyLoad.name, imgLazyLoad)
+  },
+  imgLazyLoad
+}
+```
+
+#### main.js
+```javascript
+import imgLazyLoad from './imgLazyLoad'
+
+Vue.use(imgLazyLoad)
+```
+
+#### 组件中使用
+```javascript
+<template>
+  <img v-imgLazyLoad="./assets/logo.png" >
+</template>
 ```
